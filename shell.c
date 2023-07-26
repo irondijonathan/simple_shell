@@ -19,10 +19,10 @@ int get_args(char **inp_line, char ***args)
 	size_t len = 0;
 
 	if (isatty(STDIN_FILENO))
-		write(1, '($) ', 4);
+		write(1, "($) ", 4);
 	read_line = getline(inp_line, &len, stdin);
 	if (read_line != -1)
-		*args = tokenize_string(*line, " ");
+		*args = tokenize_string(*inp_line, " ");
 	free(*inp_line);
 	*inp_line = NULL;
 	return (read_line);

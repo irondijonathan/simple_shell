@@ -3,7 +3,7 @@
 
 typedef struct
 {
-	char *line;
+	char *inp_line;
 	char **args;
 } shell_t;
 
@@ -15,7 +15,7 @@ void print_environ(void);
 
 void free_string_array(char *args[]);
 
-int _execute_command(char *args[]);
+int _exec_command(char *args[]);
 
 void _print_error(char *sn, char *command);
 

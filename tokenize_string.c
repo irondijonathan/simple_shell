@@ -61,7 +61,7 @@ int _strcmp(char *s1, char *s2)
 }
 /**
  * tokenize_string -this converts a string to an array based on token
- * @s: the string to be converted 
+ * @s: the string to be converted
  * @t: the token that will be used
  *
  * Return: return pointer to the array of strings that was converted
